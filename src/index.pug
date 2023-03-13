@@ -1,0 +1,17 @@
+include pug/head
+include pug/common/mixins/_header
+
+doctype html
+html(lang="ru")
+    +head('Главная')
+    body
+        .wrapper
+            +header('header_absolute', 'Главная')
+            main.main
+                include pug/pages/index/hero
+
+            include pug/footer
+        script(src="js/app.min.js")
+       
+
+        

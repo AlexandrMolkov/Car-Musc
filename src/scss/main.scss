@@ -1,0 +1,162 @@
+body {
+    font-family: Raleway, Arial, sans-serif;
+    color: #fff;
+    background-color: $black;
+
+    &.lock{
+        overflow: hidden;
+    }
+
+
+}
+.blur{
+
+    position: absolute;
+    z-index: 11;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    backdrop-filter: blur(0px);
+    transition: backdrop-filter 1s;
+    pointer-events: none;
+
+    &_active{
+        backdrop-filter: blur(6px);
+        pointer-events:visible;
+    }
+}
+
+.main{
+    background-color: $black;
+    overflow: hidden;
+}
+
+.title, .subtitle {
+    font-family: 'Playfair';
+    font-weight: 700;
+}
+
+.title{
+    font-size: 36px;
+    line-height: 48px;
+    color: $accent;
+
+    @media (max-width: $mobileL){
+        font-size: 28px;
+        line-height: 36px;
+    }
+}
+
+.subtitle {
+    font-size: 21px;
+    line-height: 44;
+    font-weight: 400;
+    line-height: 140%;
+    margin-bottom: 15px;
+
+}
+.text {
+    font-size: 16;
+    line-height: 20;
+
+    @media (max-width: $tablet){
+        font-size: 12;
+        line-height: 18;
+    }
+}
+
+.cover{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.fill{
+    object-fit: fill;
+    width: 100%;
+    height: 100%;
+}
+
+*:focus, *:focus-visible{
+    outline: 1px solid #fff;
+    outline-offset: 5px;
+}
+
+.laptop-hidden{
+    @media (max-width: $laptop){
+        display: none;
+    }
+}
+
+.tablet-hidden{
+    @media (max-width: $tablet){
+        display: none;
+    }
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+.pre{
+    white-space: pre;
+}
+
+table{
+    width: 100%;
+    th{
+        text-align: start;
+    }
+    td{
+        vertical-align: top;
+    }
+}
+
+.btn{
+    padding: 14px 14px;
+    display: inline-block;
+    color: #fff;
+    background-color: $accent;
+    text-align: center;
+    transition: all .3s;
+    margin: 1px auto;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 27px;
+    transition: .6s;
+
+    &:hover{
+        cursor: pointer;
+        
+        color: $black;
+        box-shadow: 0px 0px 10px 1px #fff, 0px 0px 30px 30px #fff inset, 0px 0px 0px 1px $black;
+
+    }
+
+    &:active{
+        color: rgba(#fff, .3);
+        opacity: .3;
+    }
+
+    &.w-100{
+        width: 100%;
+
+        &:hover{
+            transform: rotate(-1deg) scale(1.1);
+        }
+    }
+    
+}
+a{
+    transition: opacity .3s;
+
+    &:hover{
+        opacity: .7;
+    }
+}
+  
+.social{
+    display: flex;
+    gap: 20px;
+}

@@ -1,0 +1,19 @@
+include _burg
+include _nav
+
+mixin header(headerClass='', current='')
+    -var headerClasses = "header " + headerClass
+    header(class= headerClasses)
+        .blur
+        .container
+            .header__content
+                .header__content-row
+                    a.logo.header__logo(href="index.html")
+                        img.logo__image-main(src="img/logo/logo.svg" alt="logo" width="134" height="66")
+                    +nav(
+                        [
+                            {link:'#', content:'Главная'},
+                            {link:'#', content:'О нас'},
+                            {link:'#', content:'Контакты'},
+                        ], 'headNav', current)(class="header__nav")
+                    +burg('#headNav')(class="header-burg")
