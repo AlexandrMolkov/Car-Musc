@@ -10,9 +10,9 @@ mixin header(headerClass='', current='')
                 .header__content-row
                     +nav(
                         [
-                            {link:'#', content:'Главная'},
-                            {link:'#', content:'Оклейка автомобилей'},
-                            {link:'#', content:'Детейлинг автомобилей'},
+                            {link:'index.html', content:'Главная'},
+                            {link:'#services', content:'Оклейка автомобилей'},
+                            {link:'#services', content:'Детейлинг автомобилей'},
                             {link:'#works', content:'Галерея работ'}
                         ], 'headNav', current)(class="header__nav")
                     +burg('#headNav')(class="header-burg")

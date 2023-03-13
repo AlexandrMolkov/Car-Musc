@@ -53,10 +53,6 @@
             font-size: 36px;
             line-height: 48px;
         }
-        &::before {
-            left: 50%;
-            transform: translateX(-50%)
-        }
     }
 
     &__subtitle{

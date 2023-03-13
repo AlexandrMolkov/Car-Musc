@@ -1,0 +1,46 @@
+include ../parts/swiper-buttons-svg.pug
+
+section.advantages
+    .container
+        .advantages__content
+            h2.advantages__title.visually-hidden преимущества
+            .advantages__articles
+                article.advantage.rectangles
+                    .advantage__content
+                        img.advantage__image(src="img/svg/advantages-icon-1.svg" aria="hidden")
+                        h3.advantage__title материалы от лучших компаний
+                        .advantage__text.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et donec elementum egestas vitae ullamcorper. Amet volutpat ornare pharetra amet adipiscing orci, lectus aenean ultricies. Erat viverra eget blandit ornare. Molestie ipsum commodo faucibus rhoncus
+                article.advantage.rectangles
+                    .advantage__content
+                        img.advantage__image(src="img/svg/advantages-icon-2.svg" aria="hidden")
+                        h3.advantage__title материалы от лучших компаний
+                        .advantage__text.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pretium, rutrum est, molestie proin tristique duis sed. Morbi suspendisse amet nisl vestibulum risus. Quis pretium
+                article.advantage.rectangles
+                    .advantage__content
+                        img.advantage__image(src="img/svg/advantages-icon-3.svg" aria="hidden")
+                        h3.advantage__title материалы от лучших компаний
+                        .advantage__text.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum volutpat.
+            .advantages__slider.swiper 
+                .swiper-wrapper
+                    .swiper-slide.advantages-slide(data-hash="slide1")
+                        img.advantages-slide__image(src="img/advantages.jpg", alt="бэха")
+                        p.advantages-slide__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque auctor nibh feugiat est. Consectetur lectus.
+                            +swiper-buttons('advantages-slider-prev','advantages-slider-next')
+                    .swiper-slide.advantages-slide(data-hash="slide2")
+                        img.advantages-slide__image(src="img/advantages-2.jpg", alt="мерс")
+                        p.advantages-slide__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque auctor nibh feugiat est. Consectetur lectus.
+                            +swiper-buttons('advantages-slider-prev','advantages-slider-next')
+                    .swiper-slide.advantages-slide(data-hash="slide2")
+                        img.advantages-slide__image(src="img/advantages.jpg", alt="бэха")
+                        p.advantages-slide__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque auctor nibh feugiat est. Consectetur lectus.
+                            +swiper-buttons('advantages-slider-prev','advantages-slider-next')
+                    .swiper-slide.advantages-slide(data-hash="slide3")
+                        img.advantages-slide__image(src="img/advantages-2.jpg", alt="бэха")
+                        p.advantages-slide__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque auctor nibh feugiat est. Consectetur lectus.
+                            +swiper-buttons('advantages-slider-prev','advantages-slider-next')
+
+
+            

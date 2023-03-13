@@ -50,7 +50,7 @@ body {
         line-height: 48px;
     }
 
-    position: relative;
+/*     position: relative;
     &::before {
         content: "";
         position: absolute;
@@ -61,6 +61,29 @@ body {
         background-image: url('../img/svg/title-decor.svg');
         background-repeat: no-repeat;
         background-position: center;
+    } */
+}
+
+.rectangles{
+    position: relative;
+    &::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 147px;
+        height: 15px;
+        background-image: url('../img/svg/rectangles.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    &_left{
+        &::before {
+            left: 0;
+            transform: translateX(0px);
+        }
     }
 }
 

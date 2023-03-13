@@ -85,7 +85,7 @@ document.querySelectorAll('.popup-registration__exit-button')
 
     ////////////// swiper
 
-    const swiper = new Swiper('.main-slider', {
+    const mainSlider = new Swiper('.main-slider', {
         direction: 'horizontal',
         loop: false,
         slidesPerView: 3,
@@ -93,9 +93,37 @@ document.querySelectorAll('.popup-registration__exit-button')
         speed: 300,
         slidesPerGroup: 3,
 
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: true,
+            pauseOnMouseEnter: 'false',
+            stopOnLastSlide: false,
+        },
+
         navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
+            nextEl: '.main-slider-next',
+            prevEl: '.main-slider-prev',
+        },
+    })
+
+    const advantagesSlider = new Swiper('.advantages__slider', {
+        direction: 'horizontal',
+        loop: false,
+        slidesPerView: 1,
+        spaceBetween: 10,
+        speed: 300,
+        effect: 'flip',
+
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: true,
+            pauseOnMouseEnter: 'false',
+            stopOnLastSlide: false,
+        },
+
+        navigation: {
+            nextEl: '.advantages-slider-next',
+            prevEl: '.advantages-slider-prev',
         },
     })
 
