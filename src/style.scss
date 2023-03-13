@@ -15,13 +15,13 @@
 //@import "scss/common/_breadcrumbs.scss";
 @import "scss/common/_keyframes.scss";
 
-@import "scss/common/_checkbox.scss";
+/* @import "scss/common/_checkbox.scss";
 @import "scss/common/_radio.scss";
-@import "scss/common/_form.scss";
+@import "scss/common/_form.scss"; */
 
 @import "scss/main";
 @import "scss/header";
 @import "scss/footer";
 
 //@import "scss/pages/parts/map.scss";
-@import "scss/pages/index/hero.scss";
+@import "scss/pages/index/hero.scss", "scss/pages/index/achievements.scss";

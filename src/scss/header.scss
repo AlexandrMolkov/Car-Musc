@@ -11,12 +11,6 @@
         justify-content: center;
     }
 
-
-    &__content{
-        padding-top: 9px;
-        padding-bottom: 9px;
-    }
-
     &_absolute{
         
         width: 100%;
@@ -28,33 +22,16 @@
         
     }
 
-    &__buttons{
-        display: flex;
-        gap: 29px;
-
-        @media (max-width: 539px){
-            gap: 10px;
-        }
-    }
-
-
-    & .burg {
-        justify-content: end;
-        @media (max-width: $laptop){
-            order: 3;
-            margin-left: 0;
-        }
-    }
-
 
 
     &__content-row{
         width: 100%;
-        padding-top: 25px;
-        padding-bottom: 20px;
+        padding-top: 26px;
+        padding-bottom: 26px;
         
         display: flex;
         justify-content: space-between;
+        align-items: center;
 
     }
 
@@ -68,16 +45,13 @@
     }
 
     .burg {
-        
-        margin-bottom: -1px;
-
         z-index: 101;
     }
 
 
 }
 
-$trigger: 1024px;
+$trigger: 767px;
 
 .header__nav{
     z-index: 10;
@@ -121,11 +95,13 @@ $trigger: 1024px;
     }
 
     a {
-        font-size: 14px;
-        line-height: 140%;
-        font-weight: 400;
-        letter-spacing: 0.05em;
-        text-transform: capitalize;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 120%;
+        text-align: center;
+        letter-spacing: 0.03em;
+        text-transform: none;
 
         @media (max-width: $trigger){
             font-size: 24px;

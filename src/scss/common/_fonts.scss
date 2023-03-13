@@ -1,40 +1,24 @@
 @font-face {
-    font-family: 'Playfair';
-    font-weight: 700;
+    font-family: 'ReformaGrotesk';
+    font-weight: 600;
     src:
-        url('../fonts/PlayfairDisplay-Bold.woff2') format('woff2'),
-        url('../fonts/PlayfairDisplay-Bold.woff') format('woff');
+        url('../fonts/ReformaGroteskBold.woff2') format('woff2'),
+        url('../fonts/ReformaGroteskBold.woff') format('woff');
     font-display: swap;
 }
 @font-face {
-    font-family: 'Playfair';
+    font-family: 'ReformaGrotesk';
+    font-weight: 500;
+    src:
+        url('../fonts/ReformaGroteskMedium.woff2') format('woff2'),
+        url('../fonts/ReformaGroteskMedium.woff') format('woff');
+    font-display: swap;
+}
+@font-face {
+    font-family: 'ReformaGrotesk';
     font-weight: 400;
     src:
-        url('../fonts/PlayfairDisplay-Regular.woff2') format('woff2'),
-        url('../fonts/PlayfairDisplay-Regular.woff') format('woff');
-    font-display: swap;
-}
-@font-face {
-    font-family: 'Raleway';
-    font-weight: 700;
-    src:
-        url('../fonts/Raleway-Bold.woff2') format('woff2'),
-        url('../fonts/Raleway-Bold.woff') format('woff');
-    font-display: swap;
-}
-@font-face {
-    font-family: 'Raleway';
-    font-weight: 400;
-    src:
-        url('../fonts/Raleway-Regular.woff2') format('woff2'),
-        url('../fonts/Raleway-Regular.woff') format('woff');
-    font-display: swap;
-}
-@font-face {
-    font-family: 'Roboto';
-    font-weight: 300;
-    src:
-        url('../fonts/Roboto-Thin.woff2') format('woff2'),
-        url('../fonts/Roboto-Thin.woff') format('woff');
+        url('../fonts/ReformaGroteskDemi.woff2') format('woff2'),
+        url('../fonts/ReformaGroteskDemi.woff') format('woff');
     font-display: swap;
 }

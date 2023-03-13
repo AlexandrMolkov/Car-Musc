@@ -8,12 +8,11 @@ mixin header(headerClass='', current='')
         .container
             .header__content
                 .header__content-row
-                    a.logo.header__logo(href="index.html")
-                        img.logo__image-main(src="img/logo/logo.svg" alt="logo" width="134" height="66")
                     +nav(
                         [
                             {link:'#', content:'Главная'},
-                            {link:'#', content:'О нас'},
-                            {link:'#', content:'Контакты'},
+                            {link:'#', content:'Оклейка автомобилей'},
+                            {link:'#', content:'Детейлинг автомобилей'},
+                            {link:'#works', content:'Галерея работ'}
                         ], 'headNav', current)(class="header__nav")
                     +burg('#headNav')(class="header-burg")
