@@ -1,0 +1,38 @@
+.main-slider-section{
+
+    &__container{
+        position: relative;
+    }
+}
+
+.main-slider{
+    margin: 0 130px;
+    max-width: 1296px;
+    max-height: 420px;
+    height: 100%;
+}
+
+.main-slider-image {
+    width: 100%;
+    height: auto;
+}
+.main-slider-text {
+    padding: 30px 40px 0;
+    margin: 0 auto;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 140%;
+    text-align: center;
+    text-transform: uppercase;
+    max-width: 366px;
+    top: -30px;
+    background: linear-gradient($accent 70px , transparent 70px);
+    position: relative;
+
+    z-index: 10;
+}
+
+.swiper-button-next, .swiper-button-prev {
+    width: 70px;
+    height: 70px;
+}

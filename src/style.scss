@@ -14,6 +14,7 @@
 //@import "scss/common/_contact.scss";
 //@import "scss/common/_breadcrumbs.scss";
 @import "scss/common/_keyframes.scss";
+@import "scss/libs/swiper.min.scss";
 
 /* @import "scss/common/_checkbox.scss";
 @import "scss/common/_radio.scss";
@@ -24,4 +25,7 @@
 @import "scss/footer";
 
 //@import "scss/pages/parts/map.scss";
-@import "scss/pages/index/hero.scss", "scss/pages/index/achievements.scss";
+@import "scss/pages/index/hero.scss", 
+    "scss/pages/index/achievements.scss", 
+    "scss/pages/index/main-slider.scss"
+    ;

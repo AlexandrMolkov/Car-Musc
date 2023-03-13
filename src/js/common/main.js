@@ -1,5 +1,5 @@
 import {burgInit, burgResize} from './burger.js'
-
+import '../libs/swiper-bundle.min.js'
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -26,11 +26,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // burger
     burgInit()
-    
-    
-/*     window.addEventListener('resize', () =>  {
-        burgResize()
-    }); */
 
 /////////////////// popup
 
@@ -88,6 +83,21 @@ document.querySelectorAll('.popup-registration__exit-button')
 
 
 
+    ////////////// swiper
+
+    const swiper = new Swiper('.main-slider', {
+        direction: 'horizontal',
+        loop: false,
+        slidesPerView: 3,
+        spaceBetween: 24,
+        speed: 300,
+        slidesPerGroup: 3,
+
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    })
 
   
 })
