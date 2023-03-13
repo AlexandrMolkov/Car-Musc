@@ -1,0 +1,63 @@
+.services-block{
+    padding-bottom: 90px;
+    $gap: 24px;
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: $gap;
+    
+    > * {
+        flex: 1 1 calc((100% / 4) - ($gap*2));
+    }
+    
+    @media (max-width: $tablet){
+    
+        > * {
+            flex: 1 1 calc((100% / 2) - ($gap*2));
+        }
+    }
+
+    &__title{
+        font-size: 24px;
+        line-height: 140%;   
+    }
+
+    &__text{
+        font-size: 16px;
+        line-height: 140%;   
+    }
+}
+
+.service-card{
+    max-width: 25%;
+    padding: 60px 40px 50px;
+
+    border: 1px solid $grey;
+
+    &__content{
+        height: 100%;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    &__image{
+        margin-bottom: 30px;   
+    }
+
+    &__title{
+        margin-bottom: 20px;   
+    }
+
+    &__text{
+        flex-grow: 1;   
+        text-align: center;
+        margin-bottom: 25px;
+    }
+}

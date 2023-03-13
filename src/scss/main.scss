@@ -169,13 +169,14 @@ table{
     min-width: 144px;
 
     position: relative;
+    z-index: 1;
     &::before {
         content: "";
         position: absolute;
         z-index: -1;
         top: 0;
         left: 0;
-        width: 73%;
+        width: 50%;
         height: 100%;
         background-color: $accent;
         transition: .3s;
@@ -192,8 +193,9 @@ table{
     }
 
     &:active{
-        color: rgba(#fff, .3);
-        opacity: .3;
+/*         color: rgba(#fff, .3);
+        opacity: .3; */
+        transform: scale(0.97);
     }
 
     &.w-100{
@@ -205,6 +207,26 @@ table{
     }
     
 }
+.btn.tabs__button {
+    &::before {
+       width: 0%;
+    }
+
+    &:hover{
+        &::before {
+            width: 50%;
+            
+        }
+    }
+
+    &.tabs__button_current{
+        &::before {
+            width: 100%;
+            
+        }
+    }
+}
+
 a{
     transition: opacity .3s;
 
