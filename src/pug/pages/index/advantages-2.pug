@@ -1,0 +1,46 @@
+include ../parts/swiper-buttons-svg.pug
+
+section.advantages.advantages_2
+    .container
+        .advantages__content.advantages__content-invert
+            h2.advantages__title.visually-hidden преимущества
+            .advantages__articles
+                article.advantage.rectangles
+                    .advantage__content
+                        img.advantage__image(src="img/svg/service-icon-1.svg" aria="hidden")
+                        h3.advantage__title 100% полироль axem
+                        .advantage__text.
+                            Pharetra in bibendum id id. Sit maecenas sollicitudin est, hendrerit in malesuada. Eu, et lacus nisi mus sagittis, rhoncus est dictum. Gravida lectus urna, arcu, sodales. Ac.
+                article.advantage.rectangles
+                    .advantage__content
+                        img.advantage__image.advantage__image_left_7(src="img/svg/advantages-icon-1.svg" aria="hidden")
+                        h3.advantage__title выполняем работу четко по тз
+                        .advantage__text.
+                            Lorem nulla non nibh quis elit odio. Dui et ultricies duis mattis dictum et senectus nunc sodales. Tellus lorem risus etiam quam massa lobortis convallis laoreet. Nec.
+                article.advantage.rectangles
+                    .advantage__content
+                        img.advantage__image.advantage__image_top_15(src="img/svg/advantages-icon-2.svg" aria="hidden")
+                        h3.advantage__title у нас лучшие мастера
+                        .advantage__text.
+                            Posuere nam sodales ullamcorper bibendum justo maecenas at. Ultricies bibendum morbi tempor vehicula. Ultrices erat maecenas in id maecenas sed ipsum scelerisque. 
+            .advantages__slider.advantages__slider2.swiper 
+                .swiper-wrapper
+                    .swiper-slide.advantages-slide(data-hash="slide1")
+                        img.advantages-slide__image(src="img/advantages-2.jpg", alt="мерс")
+                        p.advantages-slide__text Neque metus vitae urna purus aliquam. Felis nullam pellentesque ac mi commodo, amet, porta in. Dui.
+                            +swiper-buttons('advantages2-slider-prev','advantages2-slider-next')
+                    .swiper-slide.advantages-slide(data-hash="slide2")
+                        img.advantages-slide__image(src="img/advantages.jpg", alt="бэха")
+                        p.advantages-slide__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque auctor nibh feugiat est. Consectetur lectus.
+                            +swiper-buttons('advantages2-slider-prev','advantages2-slider-next')
+                    .swiper-slide.advantages-slide(data-hash="slide2")
+                        img.advantages-slide__image(src="img/advantages-2.jpg", alt="мерс")
+                        p.advantages-slide__text Neque metus vitae urna purus aliquam. Felis nullam pellentesque ac mi commodo, amet, porta in. Dui.
+                            +swiper-buttons('advantages2-slider-prev','advantages2-slider-next')
+                    .swiper-slide.advantages-slide(data-hash="slide3")
+                        img.advantages-slide__image(src="img/advantages.jpg", alt="бэха")
+                        p.advantages-slide__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque auctor nibh feugiat est. Consectetur lectus.
+                            +swiper-buttons('advantages2-slider-prev','advantages2-slider-next')
+
+
+            

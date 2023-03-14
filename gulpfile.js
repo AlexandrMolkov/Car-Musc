@@ -79,11 +79,11 @@ const images = ()=> {
             }))
         )
         .pipe(imagemin([
-            mozjpeg({quality: 75, progressive: true}),
+            mozjpeg({quality: 90, progressive: true}),
             optipng({optimizationLevel: 7}),
         ]))
         .pipe(gulp.dest(`${BUILD_FOLDER}/img`))
-        .pipe(gulp.src(`${SOURCE_FOLDER}/img/**/*`))
+        //.pipe(gulp.src(`${SOURCE_FOLDER}/img/**/*`))
         .pipe(webp({
             quality: 70
         }))

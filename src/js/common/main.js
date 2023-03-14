@@ -126,6 +126,57 @@ document.querySelectorAll('.popup-registration__exit-button')
             prevEl: '.advantages-slider-prev',
         },
     })
+    const advantages2Slider = new Swiper('.advantages__slider2', {
+        direction: 'horizontal',
+        loop: false,
+        slidesPerView: 1,
+        spaceBetween: 10,
+        speed: 300,
+        effect: 'flip',
+
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: true,
+            pauseOnMouseEnter: 'false',
+            stopOnLastSlide: false,
+        },
+
+        navigation: {
+            nextEl: '.advantages2-slider-next',
+            prevEl: '.advantages2-slider-prev',
+        },
+    })
+
+    const worksSlider = new Swiper('.works__slider', {
+        direction: 'horizontal',
+        loop: false,
+        slidesPerView: 2,
+        spaceBetween: 0,
+        speed: 300,
+        //effect: 'flip',
+
+/*         autoplay: {
+            delay: 3000,
+            disableOnInteraction: true,
+            pauseOnMouseEnter: 'false',
+            stopOnLastSlide: false,
+        }, */
+
+        breakpoints: {
+            320: {
+                slidesPerView: 1
+            },
+            1024: {
+                slidesPerView: 2
+            },
+        },
+
+
+        navigation: {
+                nextEl: '.works-slider-next',
+                prevEl: '.works-slider-prev',
+            },
+    })
 
   
 })

@@ -6,15 +6,20 @@ html(lang="ru")
     +head('Главная')
     body
         .wrapper
-            +header('header_absolute', 'Главная')
+            +header('header_absolute', '')
             main.main
                 include pug/pages/index/hero
                 include pug/pages/index/acievements
                 include pug/pages/index/main-slider
                 include pug/pages/index/advantages
                 include pug/pages/index/services
+                include pug/pages/index/advantages-2
+                include pug/pages/index/works
+                include pug/pages/parts/form
 
             include pug/footer
+            include pug/pages/parts/popup
+        <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
         script(src="js/app.min.js")
        
 

@@ -12,7 +12,7 @@
 @import "scss/common/_logo.scss";
 @import "scss/common/_scrollbar.scss";
 @import "scss/common/tabs.scss";
-//@import "scss/common/_contact.scss";
+@import "scss/common/_contact.scss";
 //@import "scss/common/_breadcrumbs.scss";
 @import "scss/common/_keyframes.scss";
 @import "scss/libs/swiper.min.scss";
@@ -26,10 +26,12 @@
 @import "scss/footer";
 
 //@import "scss/pages/parts/map.scss";
-@import "scss/pages/parts/services-block.scss";
+@import "scss/pages/parts/services-block.scss", "scss/pages/parts/form.scss", "scss/pages/parts/popup.scss";
+
 @import "scss/pages/index/hero.scss", 
     "scss/pages/index/achievements.scss", 
     "scss/pages/index/main-slider.scss",
     "scss/pages/index/advantages.scss",
-    "scss/pages/index/services.scss"
+    "scss/pages/index/services.scss",
+    "scss/pages/index/works.scss"
     ;

@@ -5,7 +5,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: stretch;
     gap: $gap;
     
@@ -33,7 +33,7 @@
 
 .service-card{
     max-width: 25%;
-    padding: 60px 40px 50px;
+    padding: 78px 40px 50px;
 
     border: 1px solid $grey;
 
@@ -45,19 +45,42 @@
         justify-content: center;
         align-items: center;
 
+        position: relative;
+
     }
 
-    &__image{
+    &__icon{
         margin-bottom: 30px;   
+        position: absolute;
+        top: 0;
+
+        &_top_12{
+            top: 12px;
+        }
+        &_top_6{
+            top: 6px;
+        }
     }
 
     &__title{
         margin-bottom: 20px;   
+        font-size: 24px;
+        text-transform: uppercase;
+        padding-top: 92px;
     }
 
     &__text{
         flex-grow: 1;   
         text-align: center;
-        margin-bottom: 25px;
+        text-transform: uppercase;
+        font-size: 15px;
+        line-height: 140%;
+        margin-bottom: 28px;
+    }
+
+    &__link{
+        min-width: 100px;
+        padding: 8px;
+        font-size: 18px;
     }
 }

@@ -1,0 +1,48 @@
+include ../parts/swiper-buttons-svg.pug
+section#works.works
+    .works__content
+        h2.works__title.title.rectangles Наши работы
+        .works__galery
+            .swiper.works__slider
+                .swiper-wrapper
+                    .swiper-slide(data-hash="slide1")
+                        .works__slide
+                            a.gallery__item(data-fancybox="gallery" href="img/work-1.jpg")
+                                img(src="img/work-1.jpg", alt="audi r8")
+                            a.gallery__item(data-fancybox="gallery" href="img/work-2.jpg")
+                                img(src="img/work-2.jpg", alt="toyota supra")
+                            a.gallery__item(data-fancybox="gallery" href="img/work-3.jpg")
+                                img(src="img/work-3.jpg", alt="toyota brz")
+                            a.gallery__item(data-fancybox="gallery" href="img/work-6.jpg")
+                                img(src="img/work-6.jpg", alt="bmw")
+                            a.gallery__item(data-fancybox="gallery" href="img/work-5.jpg")
+                                img(src="img/work-5.jpg", alt="toyota supra")
+                            a.gallery__item(data-fancybox="gallery" href="img/work-4.jpg")
+                                img(src="img/work-4.jpg", alt="lamba")
+                            a.gallery__item(data-fancybox="gallery" href="img/work-1.jpg")
+                                img(src="img/work-1.jpg", alt="audi r8")
+                            a.gallery__item(data-fancybox="gallery" href="img/work-2.jpg")
+                                img(src="img/work-2.jpg", alt="toyota supra")
+                            a.gallery__item(data-fancybox="gallery" href="img/work-3.jpg")
+                                img(src="img/work-3.jpg", alt="toyota brz")
+                    .swiper-slide(data-hash="slide2")
+                        .works__slide
+                            a.gallery__item(data-fancybox="gallery" href="img/work-4.jpg")
+                                img(src="img/work-4.jpg", alt="lamba")
+                            a.gallery__item(data-fancybox="gallery" href="img/work-5.jpg")
+                                img(src="img/work-5.jpg", alt="toyota supra")
+                            a.gallery__item(data-fancybox="gallery" href="img/work-6.jpg")
+                                img(src="img/work-6.jpg", alt="bmw")
+                            a.gallery__item(data-fancybox="gallery" href="img/work-3.jpg")
+                                img(src="img/work-3.jpg", alt="toyota brz")
+                            a.gallery__item(data-fancybox="gallery" href="img/work-2.jpg")
+                                img(src="img/work-2.jpg", alt="toyota supra")
+                            a.gallery__item(data-fancybox="gallery" href="img/work-1.jpg")
+                                img(src="img/work-1.jpg", alt="audi r8")
+                            a.gallery__item(data-fancybox="gallery" href="img/work-4.jpg")
+                                img(src="img/work-4.jpg", alt="lamba")
+                            a.gallery__item(data-fancybox="gallery" href="img/work-5.jpg")
+                                img(src="img/work-5.jpg", alt="toyota supra")
+                            a.gallery__item(data-fancybox="gallery" href="img/work-6.jpg")
+                                img(src="img/work-6.jpg", alt="bmw")  
+            +swiper-buttons('works-slider-prev','works-slider-next')

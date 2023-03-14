@@ -3,11 +3,12 @@
     padding-left: 40px;
     white-space: pre;
     
+    
     &::before {
         content: "";
         position: absolute;
-        top: -55%;
-        left: 0;
+        top: 3px;
+        left: 5px;
         width: 24px;
         height: 24px;
         background-repeat: no-repeat;
@@ -23,11 +24,15 @@
         margin-left: 0px;
     }
 
+    &_top_6{
+        top: 6px;
+    }
+
 
 }
 .contact-location{
     &::before {
-        background-image: url('../img/svg/icons/loc.svg');
+        background-image: url('../img/svg/icons/location.svg');
     }
 }
 .contact-phone{
@@ -36,7 +41,6 @@
     }
 }
 .contact-mail{
-    padding-top: 5px;
     &::before {
         background-image: url('../img/svg/icons/mail.svg');
     }

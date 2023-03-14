@@ -43,25 +43,12 @@ body {
     font-size: 52px;
     line-height: 140%;
     letter-spacing: 0.05em;
-    padding-bottom: 55px;
+    padding-bottom: 58px;
     
     @media (max-width: $mobileL){
         font-size: 36px;
         line-height: 48px;
     }
-
-/*     position: relative;
-    &::before {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 147px;
-        height: 15px;
-        background-image: url('../img/svg/title-decor.svg');
-        background-repeat: no-repeat;
-        background-position: center;
-    } */
 }
 
 .rectangles{
@@ -150,13 +137,27 @@ table{
         vertical-align: top;
     }
 }
+address{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    line-height: 2;
 
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 23px;
+    width: 50%;
+    align-items: flex-end;
+    justify-content: flex-end;
+
+}
 .btn{
     padding: 15px;
     display: inline-block;
     color: #fff;
     background-color: transparent;
-    margin: 1px auto;
 
     font-weight: 600;
     font-size: 24px;
@@ -237,5 +238,28 @@ a{
   
 .social{
     display: flex;
-    gap: 20px;
+    flex-direction: column;
+    gap: 15px;
+
+    &__li{
+        border: 1px solid $grey;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__icon{
+        display: block;
+    }
 }
+
+.copy{
+    font-size: 16px;
+    text-transform: uppercase;
+    opacity: 0.5;
+    letter-spacing: 0.05em;
+    line-height: 140%;
+}
+
