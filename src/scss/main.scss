@@ -44,10 +44,31 @@ body {
     line-height: 140%;
     letter-spacing: 0.05em;
     padding-bottom: 58px;
+    margin-bottom: 40px;
     
     @media (max-width: $mobileL){
         font-size: 36px;
         line-height: 48px;
+    }
+
+    &_service{
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 125%;
+        letter-spacing: 0.0em;
+        text-align: center;
+        color: $accent;
+        max-width: 636px;
+        margin-bottom: 40px;
+    }
+
+    &_fsz_32{
+        font-size: 32px;
+        max-width: 526px;
+    }
+
+    &_center{
+        text-align: center;
     }
 }
 
@@ -133,9 +154,6 @@ table{
     th{
         text-align: start;
     }
-    td{
-        vertical-align: top;
-    }
 }
 address{
     font-style: normal;
@@ -206,7 +224,7 @@ address{
             transform: rotate(-1deg) scale(1.1);
         }
     }
-    
+
 }
 .btn.tabs__button {
     &::before {

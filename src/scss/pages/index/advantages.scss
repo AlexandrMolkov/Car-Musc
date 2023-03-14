@@ -18,6 +18,46 @@
     &_2{
         padding-top: 90px;
     }
+
+    &__text{
+        margin-bottom: 60px;   
+
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 120%;
+
+        letter-spacing: 0.03em;
+    }
+
+    &__left{
+        max-width: 526px;
+    }
+    &__brands{
+        padding-right: 50px;
+        margin-left: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 470px;
+
+        &:not(:last-child){
+            margin-bottom: 50px;
+        }
+
+    }
+
+    &__brand{
+
+        &_voys{
+            margin-top: 15px;
+        }
+
+        img{
+            display: block;
+        }
+
+    }
 }
 
 .advantages__content.advantages__content-invert{
@@ -60,6 +100,7 @@
         line-height: 120%;
         letter-spacing: 0.03em;
     }
+
 }
 .advantages-slide{
     &__text{

@@ -1,0 +1,42 @@
+include ../parts/swiper-buttons-svg.pug
+
+section.advantages
+    .container
+        .advantages__content
+            .advantages__left
+                h2.advantages__title.title.title_fsz_32.rectangles.rectangles_left.
+                    Полиуретановая пленка единственная надежная защита автомобиля
+                    от всех внешних воздействий
+                .advantages__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Habitant tincidunt aliquam tincidunt pretium sodales. Tristique odio pellentesque et tincidunt posuere arcu
+                .advantages__brands
+                    .advantages__brand.advantages__brand_voys
+                        img(src="img/svg/brand-voys.svg", width="170" height="50" alt="voys")
+                    .advantages__brand
+                        img(src="img/svg/brand-star.svg", width="160" height="60" alt="star")
+                .advantages__brands
+                    .advantages__brand
+                        img(src="img/svg/brand-star.svg", width="160" height="60" alt="star")
+                    .advantages__brand.advantages__brand_voys
+                        img(src="img/svg/brand-voys.svg", width="170" height="50" alt="voys")
+
+            .advantages__slider.swiper 
+                .swiper-wrapper
+                    .swiper-slide.advantages-slide(data-hash="slide1")
+                        img.advantages-slide__image(src="img/advantages.jpg", alt="бэха")
+                        p.advantages-slide__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque auctor nibh feugiat est. Consectetur lectus.
+                            +swiper-buttons('advantages-slider-prev','advantages-slider-next')
+                    .swiper-slide.advantages-slide(data-hash="slide2")
+                        img.advantages-slide__image(src="img/advantages-2.jpg", alt="мерс")
+                        p.advantages-slide__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque auctor nibh feugiat est. Consectetur lectus.
+                            +swiper-buttons('advantages-slider-prev','advantages-slider-next')
+                    .swiper-slide.advantages-slide(data-hash="slide2")
+                        img.advantages-slide__image(src="img/advantages.jpg", alt="бэха")
+                        p.advantages-slide__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque auctor nibh feugiat est. Consectetur lectus.
+                            +swiper-buttons('advantages-slider-prev','advantages-slider-next')
+                    .swiper-slide.advantages-slide(data-hash="slide3")
+                        img.advantages-slide__image(src="img/advantages-2.jpg", alt="бэха")
+                        p.advantages-slide__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque auctor nibh feugiat est. Consectetur lectus.
+                            +swiper-buttons('advantages-slider-prev','advantages-slider-next')
+
+
+            
