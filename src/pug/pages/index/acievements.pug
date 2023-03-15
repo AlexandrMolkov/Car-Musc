@@ -7,6 +7,7 @@ section.achievements
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Habitant tincidunt aliquam tincidunt pretium sodales. Tristique odio pellentesque et tincidunt posuere arcu purus lobortis risus. Urna, ut amet odio orci magnis praesent ultrices. Praesent malesuada lacus tellus tristique sit at. Sed viverra nulla nam arcu, non iaculis pretium, volutpat. 
                     
             .achievements__item.achievements__item-grid
+                input#showmore.visually-hidden(type="checkbox")
                 .achievements__col  
                     .achievement-grid-item
                         .achievement-grid-item__number 
@@ -28,7 +29,7 @@ section.achievements
                             span #
                             span 1
                         .achievement-grid-item__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dui 
-                .achievements__col  
+                .achievements__col.achievements__col_pt_40
                     .achievement-grid-item
                         .achievement-grid-item__number
                             span #
@@ -48,3 +49,4 @@ section.achievements
                         .achievement-grid-item__img-wrapper
                             img.achievement-grid-item__img(src="./img/svg/kubok.svg" aria-hidden="true")
                         .achievement-grid-item__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dui 
+                label.achievements__read-more.btn(for="showmore") Показать ещё

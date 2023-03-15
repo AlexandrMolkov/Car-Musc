@@ -10,12 +10,27 @@
 
     &_pt_75{
         padding-top: 75px;
+
+        @media (max-width: $mobileL){
+            padding-top: 30px;
+        }
+    }
+
+    .swiper-button-next{
+        right: 0;
+    }
+    .swiper-button-prev {
+        left: 0;
     }
 }
 
 .tabs__buttons{
     margin-bottom: 76px;
     justify-content: space-between;
+
+    @media (max-width: $tablet){
+        margin-bottom: 60px;
+    }
     
 }
 .tabs__button{
@@ -24,4 +39,21 @@
     font-size: 32px;
     font-weight: 400;
     width: 180px;
+
+    @media (max-width: $tablet){
+        padding: 8px;
+        padding-top: 12px;
+        width: 120px;
+        
+        font-size: 18px;
+    }
+}
+.services__slider-1, .services__slider-2{
+
+    max-height: 100vh;
+
+    .swiper-slide{
+        height: auto;
+    }
+
 }

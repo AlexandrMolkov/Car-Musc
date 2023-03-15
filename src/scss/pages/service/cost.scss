@@ -11,7 +11,9 @@
 .cost__table{
     padding-bottom: 120px;
 
-
+    @media (max-width: $mobileL){
+        padding-bottom: 60px;
+    }
 
     tr{
 
@@ -46,6 +48,16 @@
         font-weight: 600;
         font-size: 24px;
         line-height: 140%;
+
+        @media (max-width: $tablet){
+            font-size: 18px;
+        }
+        @media (max-width: 539px){
+            font-size: 14px;
+        }       
+        @media (max-width: $mobileM){
+            font-size: 12px;
+        }
     }
 
     td{
@@ -57,6 +69,17 @@
         font-weight: 600;
         font-size: 24px;
         line-height: 140%;
+
+        @media (max-width: $tablet){
+            font-size: 16px;
+        }
+
+        @media (max-width: 539px){
+            font-size: 13px;
+        }
+        @media (max-width: $mobileM){
+            font-size: 12px;
+        }
 
         &:not(:first-child){
             opacity: 0.6;

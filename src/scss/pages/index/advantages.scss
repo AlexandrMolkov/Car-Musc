@@ -1,18 +1,34 @@
 .advantages{
     padding: 180px 0 86px;
 
+    @media (max-width: $mobileL){
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
     &__content{
         display: flex;
         justify-content: space-between;
+        align-items: flex-start;
         gap: 30px;
+
+        @media (max-width: $tablet){
+            flex-wrap: wrap;
+        }
     }
     &__articles{
         max-width: 526px;
         width: 100%;
     }
     &__slider{
-        max-width: 636px;
+        width: 50%;
         margin: 0;
+
+        @media (max-width: $tablet){
+            max-width: 630px;
+            width: 100%;
+            margin: 0 auto;
+        }
     }
 
     &_2{
@@ -28,21 +44,34 @@
         line-height: 120%;
 
         letter-spacing: 0.03em;
+
+        @media (max-width: $mobileL){
+            font-size: 18px;
+        }
     }
 
     &__left{
         max-width: 526px;
+
+        @media (max-width: $tablet){
+            margin-bottom: 60px;
+        }
     }
     &__brands{
         padding-right: 50px;
         margin-left: auto;
         display: flex;
+        gap: 30px;
         justify-content: space-between;
         align-items: center;
         max-width: 470px;
 
         &:not(:last-child){
             margin-bottom: 50px;
+        }
+
+        @media (max-width: $mobileL){
+            padding-right: 0px;
         }
 
     }
@@ -55,6 +84,8 @@
 
         img{
             display: block;
+            width: 100%;
+            height: auto;
         }
 
     }
@@ -92,6 +123,11 @@
         font-size: 33px; 
         margin-bottom: 48px;
         text-transform: uppercase;
+
+        @media (max-width: $mobileL){
+            font-size: 28px;
+            margin-bottom: 26px;
+        }
     }
 
     &__text{
@@ -99,6 +135,10 @@
         font-size: 24px;
         line-height: 120%;
         letter-spacing: 0.03em;
+
+        @media (max-width: $mobileL){
+            font-size: 20px;
+        }
     }
 
 }
@@ -114,6 +154,11 @@
         font-weight: 600;
         font-size: 18px;
         line-height: 140%;
+
+        @media (max-width: 539px){
+            padding-left: 50px;
+            padding-right: 50px;
+        }
     }
 
     &__image{

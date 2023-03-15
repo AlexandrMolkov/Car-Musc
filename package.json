@@ -1,10 +1,10 @@
 {
-  "name": "Car musc",
+  "name": "CarMusc",
   "version": "1.0.0",
   "description": "",
   "main": "index.html",
   "type": "module",
-  "homepage": "https://AlexandrMolkov.github.io/carMusc",
+  "homepage": "https://AlexandrMolkov.github.io/Car-Musc",
   "scripts": {
     "deploy": "gh-pages -d dist"
   },

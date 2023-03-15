@@ -17,6 +17,10 @@
     .webp &{
         background-image: linear-gradient(180deg, rgba(20, 20, 20, 0.8) 78.8%, #141414 100%), url('../img/hero.webp');
     }
+
+    @media (max-width: $mobileL){
+        min-height: 860px;
+    }
  
     &__content{
         transform: translateY(17%);
@@ -58,9 +62,12 @@
 
         margin-bottom: 40px;
 
+        @media (max-width: $tablet){
+            font-size: 112px;
+        }
         @media (max-width: $mobileL){
-            font-size: 36px;
-            line-height: 48px;
+            margin-bottom: 30px;
+            font-size: 80px;
         }
     }
 
@@ -71,6 +78,10 @@
         text-align: center; 
 
         margin-bottom: 40px;
+
+        @media (max-width: $mobileL){
+            font-size: 32px;
+        }
 
         &_service{
             margin-bottom: 87px;
@@ -140,8 +151,16 @@
     border: 1px solid $grey;
     border-left: 0;
 
+    @media (max-width: $tablet){
+        padding: 25px 10px;
+    }
+
     &:last-child{
         border-right: 0;
+    }
+
+    @media (max-width: $laptop){
+        min-height: 180px;
     }
 
     &__title{
@@ -152,6 +171,11 @@
         letter-spacing: 0.05em;
         text-transform: uppercase;
         margin-bottom: 20px;
+
+        @media (max-width: $mobileL){
+            font-size: 16px;
+        }
+
     }
 
     &__text{
@@ -165,6 +189,32 @@
 
         &:not(:last-child){
             margin-bottom: 15px;
+
+            @media (max-width: $mobileL){
+                margin-bottom: 10px;
+            }
+        }
+
+        @media (max-width: $laptop){
+            font-size: 20px;
+            margin-bottom: 5px;
+        }
+        @media (max-width: $tablet){
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+        @media (max-width: $mobileL){
+            flex-grow: 1;
+/*             display: flex;
+            flex-direction: column;
+            justify-content: center; */
+            font-size: 16px;
+        }
+    }
+    &__mobile-line{
+        @media (max-width: $mobileL){
+            display: block;
+            width: 100%;
         }
     }
     &__link{
@@ -173,6 +223,12 @@
 
         &:not(:last-child){
             margin-bottom: 15px;
+
+            @media (max-width: $laptop){
+                    margin-bottom: 5px;
+            }
         }
-       }
+    }
+
+
 }

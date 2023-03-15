@@ -6,11 +6,14 @@
 
     .swiper-button-prev{
         left: 30px !important;
-        top: 48%;
+        top: 44%;
     }
     .swiper-button-next{
         right: 30px !important;
-        top: 48%;
+        top: 44%;
+    }
+    .main-slider{
+        max-height: none;
     }
 }
 
@@ -20,7 +23,12 @@
     max-height: 420px;
     height: 100%;
 
-    
+    @media (max-width: $tablet){
+        margin: 0 80px;
+    }
+    @media (max-width: 539px){
+        margin: 0;
+    }
 
 }
 
@@ -31,7 +39,7 @@
 .main-slider-text {
     padding: 30px 40px 0;
     margin: 0 auto;
-    max-width: 366px;
+    max-width: 88%;
     background: linear-gradient($accent 65% , transparent 65%);
 
     position: relative;
@@ -43,6 +51,11 @@
     line-height: 140%;
     text-align: center;
     text-transform: uppercase;
+
+    @media (max-width: $mobileL){
+        padding-top: 10px;
+        font-size: 14px;
+    }
 }
 
 .swiper-button-next, .swiper-button-prev {

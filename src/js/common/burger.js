@@ -22,6 +22,12 @@ document.querySelectorAll(`.burg`)
         b.append(inner)
         document.querySelector(b.dataset.target).classList.add(`nav-burg`)
 
+        document.querySelector(b.dataset.target).addEventListener('click', e => {
+            if(e.target.classList.contains('nav__link')) {
+                hideMobileMenu()
+            }
+        })
+
         b.addEventListener('click', (e) => {
             if(e.target.closest('.burg')) {
                 const burg = e.target.closest('.burg')
@@ -42,12 +48,17 @@ document.querySelectorAll(`.burg`)
 }
 
 
+const hideMobileMenu = () => {
+    document.body.classList.remove(`lock`)
+    document.querySelector(document.querySelector(`.burg`).dataset.target).classList.remove(`show`)
+    document.querySelector(`.burg`).classList.remove(`open`)
+    document.querySelector('.blur').classList.remove('blur_active')
+}
+
 
 export const burgResize = () => {
     //if(window.innerWidth > 1024) {
-        document.body.classList.remove(`lock`)
-        document.querySelector(document.querySelector(`.burg`).dataset.target).classList.remove(`show`)
-        document.querySelector(`.burg`).classList.remove(`open`)
-        document.querySelector('.blur').classList.remove('blur_active')
+        hideMobileMenu()
       //}
 }
+

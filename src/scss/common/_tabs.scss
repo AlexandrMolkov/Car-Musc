@@ -9,6 +9,10 @@
         width: 100%;
         gap: 30px;
         margin: 0 auto;
+
+        @media (max-width: $tablet){
+            max-width: 320px;
+        }
     }
 
     &__button{
@@ -32,6 +36,17 @@
         padding-top: 5px;
         transition: opacity 0.3s;
         opacity: 1;
+
+        @media (max-width: 1200px){
+            padding-left: 80px;
+            padding-right: 80px;
+            position: relative;
+        }
+
+        @media (max-width: 539px){
+            padding-left: 0px;
+            padding-right: 0px;
+        }
         
         &_hidden{
             opacity: 0;

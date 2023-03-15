@@ -45,10 +45,27 @@ body {
     letter-spacing: 0.05em;
     padding-bottom: 58px;
     margin-bottom: 40px;
-    
+
+    @media (max-width: $tablet){
+        font-size: 48px;
+    }
     @media (max-width: $mobileL){
-        font-size: 36px;
-        line-height: 48px;
+        padding-bottom: 45px;
+        font-size: 38px;
+        line-height: 120%;
+        margin-bottom: 30px;
+    }
+
+    &_fsz_32{
+        font-size: 32px;
+        max-width: 526px;
+
+        @media (max-width: $tablet){
+            font-size: 28px;
+        }
+        @media (max-width: $mobileL){
+            font-size: 26px;
+        }
     }
 
     &_service{
@@ -62,14 +79,11 @@ body {
         margin-bottom: 40px;
     }
 
-    &_fsz_32{
-        font-size: 32px;
-        max-width: 526px;
-    }
-
     &_center{
         text-align: center;
     }
+    
+
 }
 
 .rectangles{
@@ -170,6 +184,11 @@ address{
     align-items: flex-end;
     justify-content: flex-end;
 
+    @media (max-width: 539px){
+        width: auto;
+        margin-left: auto;
+        flex-direction: column;
+    }
 }
 .btn{
     padding: 15px;
@@ -215,6 +234,10 @@ address{
 /*         color: rgba(#fff, .3);
         opacity: .3; */
         transform: scale(0.97);
+    }
+
+    @media (max-width: $mobileL){
+        min-width: fit-content;
     }
 
     &.w-100{
@@ -271,6 +294,10 @@ a{
     &__icon{
         display: block;
     }
+
+    @media (max-width: 539px){
+        flex-direction: row;
+    }
 }
 
 .copy{
@@ -281,3 +308,14 @@ a{
     line-height: 140%;
 }
 
+.tablet-hidden {
+    @media (max-width: $tablet){
+        display: none;
+    }
+}
+
+.swiper-button-next, .swiper-button-prev{
+    @media (max-width: 539px){
+        width: 45px !important;
+    }
+}

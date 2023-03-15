@@ -1,5 +1,6 @@
 .services-block{
-    padding-bottom: 90px;
+/*     padding-bottom: 90px;
+
     $gap: 24px;
     
     display: flex;
@@ -10,15 +11,50 @@
     gap: $gap;
     
     > * {
-        flex: 1 1 calc((100% / 4) - ($gap*2));
-    }
+        flex: 1 0 calc((100% / 4) - ($gap*2));
+    } */
     
-    @media (max-width: $tablet){
+/*     @media (max-width: 1200px){
     
         > * {
-            flex: 1 1 calc((100% / 2) - ($gap*2));
+            flex: 0 0 calc((100% / 2) - ($gap*2));
+        }
+    } */
+
+
+
+
+
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 24px;
+    
+    > * {
+        grid-column: span 3;
+    }
+
+    @media (max-width: 960px){
+        gap: 12px;
+        > * {
+            grid-column: span 6;
         }
     }
+
+    @media (max-width: 960px){
+        max-width: 640px;
+        margin: 0 auto;
+    }
+
+
+
+
+    
+/*     @media (max-width: 1200px){
+    
+        > * {
+            grid-column: span 6;
+        }
+    } */
 
     &__title{
         font-size: 24px;
@@ -32,8 +68,18 @@
 }
 
 .service-card{
-    max-width: 25%;
-    padding: 78px 40px 50px;
+    //max-width: 306px;
+    
+    //min-width: 200px;
+    height: 100%;
+    //padding: 78px 40px 50px;
+    //padding: 6.3% 3.2% 3.9%;
+    
+    padding: 25% 13% 16%;
+
+    @media (max-width: $mobileL){
+        padding: 16% 10% 12%;
+    }
 
     border: 1px solid $grey;
 
@@ -68,12 +114,35 @@
 
     &__title{
         margin-bottom: 20px;   
-        font-size: 24px;
+        //font-size: 24px;
         text-transform: uppercase;
         padding-top: 92px;
+        text-align: center;
 
         &_pt_110{
             padding-top: 110px;
+        }
+
+/*         @media (max-width: 1344px){
+            font-size: 1.8vw;
+        }
+
+        @media (max-width: 960px){
+            font-size: 3vw;
+        } */
+
+        @media (max-width: 960px){
+            flex-grow: 1;
+        }
+
+        @media (max-width: $laptop){
+            font-size: 2.4vw;
+        }
+        @media (max-width: $tablet){
+            font-size: 3.2vw;
+        }
+        @media (max-width: $mobileL){
+            font-size: 6vw;
         }
     }
 
@@ -84,6 +153,23 @@
         font-size: 15px;
         line-height: 140%;
         margin-bottom: 28px;
+
+/*         @media (max-width: 1344px){
+            font-size: 1.15vw;
+        }
+        @media (max-width: 960px){
+            font-size: 2vw;
+        } */
+
+        @media (max-width: $laptop){
+            font-size: 1.5vw;
+        }
+        @media (max-width: $tablet){
+            font-size: 1.9vw;
+        }
+        @media (max-width: $mobileL){
+            font-size: 3vw;
+        }
     }
 
     &__link{

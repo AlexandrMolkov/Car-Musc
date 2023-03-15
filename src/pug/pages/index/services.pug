@@ -1,3 +1,4 @@
+include ../parts/swiper-buttons-svg.pug
 
 section#services.services
     .services__content.container
@@ -7,7 +8,62 @@ section#services.services
                 button.tabs__button.btn(data-target="#tab1") Оклейка
                 button.tabs__button.btn(data-target="#tab2") Детейлинг
             .tabs__content#tab1
-                .services-block 
+                +swiper-buttons('services1-slider-prev','services1-slider-next')
+                .swiper.services__slider-1
+                    .swiper-wrapper
+                        .swiper-slide(data-hash="slide1")
+                            article.service-card
+                                .service-card__content
+                                    img.service-card__icon.service-card__icon_top_6(src="img/svg/service-icon-1.svg" aria-hidden="true" alt="")
+                                    h3.service-card__title Защитные пленки
+                                    .service-card__text.
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nascetur ultrices pellentesque vulputate sit. Ut feugiat.
+                                    a(href="service.html").btn.service-card__link Подробнее
+                        .swiper-slide(data-hash="slide2")
+                            article.service-card
+                                .service-card__content
+                                    img.service-card__icon(src="img/svg/advantages-icon-1.svg" aria-hidden="true" alt="")
+                                    h3.service-card__title Цветные пленки
+                                    .service-card__text.
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nascetur ultrices pellentesque vulputate sit. Ut feugiat.
+                                    a(href="service.html").btn.service-card__link Подробнее
+                        .swiper-slide(data-hash="slide3")
+                            article.service-card
+                                .service-card__content
+                                    img.service-card__icon.service-card__icon_top_12(src="img/svg/advantages-icon-2.svg" aria-hidden="true" alt="")
+                                    h3.service-card__title Дизайн
+                                    .service-card__text.
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nascetur ultrices pellentesque vulputate sit. Ut feugiat.
+                                    a(href="service.html").btn.service-card__link Подробнее
+                        .swiper-slide(data-hash="slide4")
+                            article.service-card
+                                .service-card__content
+                                    img.service-card__icon(src="img/svg/advantages-icon-3.svg" aria-hidden="true" alt="")
+                                    h3.service-card__title Оклейка салона
+                                    .service-card__text.
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nascetur ultrices pellentesque vulputate sit. Ut feugiat.
+                                    a(href="service.html").btn.service-card__link Подробнее
+            .tabs__content#tab2
+                +swiper-buttons('services2-slider-prev','services2-slider-next')
+                .swiper.services__slider-2
+                    .swiper-wrapper
+                        .swiper-slide(data-hash="slide1")      
+                            article.service-card
+                                .service-card__content
+                                    img.service-card__icon(src="img/svg/service-icon-1.svg" aria-hidden="true" alt="")
+                                    h3.service-card__title Защитные пленки
+                                    .service-card__text.
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nascetur ultrices pellentesque vulputate sit. Ut feugiat.
+                                    a(href="service.html").btn.service-card__link Подробнее
+                        .swiper-slide(data-hash="slide2")  
+                            article.service-card
+                                .service-card__content
+                                    img.service-card__icon(src="img/svg/advantages-icon-1.svg" aria-hidden="true" alt="")
+                                    h3.service-card__title Цветные пленки
+                                    .service-card__text.
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nascetur ultrices pellentesque vulputate sit. Ut feugiat.
+                                    a(href="service.html").btn.service-card__link Подробнее
+                //.services-block 
                     article.service-card
                         .service-card__content
                             img.service-card__icon.service-card__icon_top_6(src="img/svg/service-icon-1.svg" aria-hidden="true" alt="")
@@ -36,7 +92,7 @@ section#services.services
                             .service-card__text.
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nascetur ultrices pellentesque vulputate sit. Ut feugiat.
                             a(href="service.html").btn.service-card__link Подробнее
-            .tabs__content#tab2
+            //.tabs__content#tab2
                 .services-block 
                     article.service-card
                         .service-card__content
