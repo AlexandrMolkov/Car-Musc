@@ -41,7 +41,9 @@
         justify-content: space-between;
         margin: 0 auto;
 
-        animation: animopacity 1.5s;
+        //opacity: 0;
+        position: relative;
+        //animation: animopacitytotop 1s;
         animation-fill-mode: both;
 
         max-width: 483px;
@@ -113,6 +115,9 @@
 
    &__bottom{
         display: flex;
+
+        position: relative;
+        //animation: animopacitytotop 1s;
    }
 
    &__item{

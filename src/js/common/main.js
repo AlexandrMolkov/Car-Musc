@@ -1,5 +1,7 @@
 import {burgInit, burgResize} from './burger.js'
+//import anime from 'animejs/lib/anime.es.js';
 import '../libs/inputmask.js'
+import AOS from 'aos';
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -35,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
   
-    document.querySelector('.achievements__read-more').addEventListener('click', e => {
+    document.querySelector('.achievements__read-more')?.addEventListener('click', e => {
         const btn = e.target
         btn.classList.toggle('active')
         if (btn.classList.contains(('active'))) {
@@ -52,6 +54,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const inputTel = document.querySelector('input[type="tel"]')
     const maskTel = new Inputmask('+7 (999) 999-99-99')
     maskTel.mask(inputTel)
+
+
+
+    ////////// animations
+    
+    AOS.init();
+
+
 
 })
 

@@ -3,7 +3,7 @@ include ../parts/swiper-buttons-svg.pug
 section.advantages
     .container
         .advantages__content
-            .advantages__left
+            .advantages__left(data-aos="fade-right" data-aos-duration="1000")
                 h2.advantages__title.title.title_fsz_32.rectangles.rectangles_left.
                     Полиуретановая пленка единственная надежная защита автомобиля
                     от всех внешних воздействий
@@ -19,7 +19,7 @@ section.advantages
                     .advantages__brand.advantages__brand_voys
                         img(src="img/svg/brand-voys.svg", width="170" height="50" alt="voys")
 
-            .advantages__slider.swiper 
+            .advantages__slider.swiper(data-aos="fade-left" data-aos-duration="1000" data-aos-delay="250")
                 .swiper-wrapper
                     .swiper-slide.advantages-slide(data-hash="slide1")
                         img.advantages-slide__image(src="img/advantages.jpg", alt="бэха")

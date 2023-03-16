@@ -14,7 +14,8 @@
 @import "scss/common/tabs.scss";
 @import "scss/common/_contact.scss";
 //@import "scss/common/_breadcrumbs.scss";
-@import "scss/common/_keyframes.scss";
+//@import "scss/common/_keyframes.scss";
+@import "../node_modules/aos/dist/aos";
 
 @import '../node_modules/swiper/swiper.scss';
 @import '../node_modules/swiper/modules/navigation/navigation.scss';

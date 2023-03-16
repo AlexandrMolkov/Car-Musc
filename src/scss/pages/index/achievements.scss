@@ -94,6 +94,11 @@
        position: absolute;
        bottom: -105px;
        left: 0;
+       display: none;
+
+       @media (max-width: $tablet){
+        display: block;
+       }
     }
 
 }
