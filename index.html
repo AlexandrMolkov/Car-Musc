@@ -4,13 +4,14 @@
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="Кастомизация автомобилей"/>
     <link rel="shortcut icon" href="img/logo/logo.svg" type="image/x-icon"/>
-    <link rel="stylesheet" href="css/style.min.css"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" >
+    <link rel="stylesheet" href="css/style.min.css"/>
     <title>Главная</title>
   </head>
   <body>
     <div class="wrapper">
-      <header class="header header_absolute">
+      <header class="header header_absolute" data-aos="fade-down" data-aos-duration="1000">
         <div class="blur"></div>
         <div class="container">
           <div class="header__content">
@@ -32,13 +33,13 @@
         <section class="hero">
           <div class="container hero__container">
             <div class="hero__content">
-              <div class="hero__main-block">
+              <div class="hero__main-block" data-aos="fade-up" data-aos-duration="1000">
                 <h1 class="hero__title title rectangles">CAR MUSC</h1>
                 <h2 class="hero__subtitle"> <span class="hero__subtitle-line">Lorem ipsum dolor sit amet, consectetur </span><span class="hero__subtitle-line">adipiscing elit. Vitae orci urna amet penatibus.</span></h2><a class="hero__btn btn" href="#services">Наши услуги</a>
               </div>
             </div>
           </div>
-          <div class="hero__bottom"> 
+          <div class="hero__bottom" data-aos="fade" data-aos-duration="1000" data-aos-delay="250">
             <div class="contact hero__item">
               <p class="contact__title">адрес:</p>
               <p class="contact__text">Lorem ipsum dolor sit amet,</p>
@@ -58,15 +59,15 @@
         <section class="achievements">
           <div class="container">
             <div class="achievements__content">
-              <div class="achievements__item">
+              <div class="achievements__item" data-aos="fade-right" data-aos-duration="1000">
                 <h2 class="title achievements__title rectangles rectangles_left">наши достижения от кубка россии до чемпионатов мира</h2>
                 <div class="achievements__text">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Habitant tincidunt aliquam tincidunt pretium sodales. Tristique odio pellentesque et tincidunt posuere arcu purus lobortis risus. Urna, ut amet odio orci magnis praesent ultrices. Praesent malesuada lacus tellus tristique sit at. Sed viverra nulla nam arcu, non iaculis pretium, volutpat. 
                   
                 </div>
               </div>
-              <div class="achievements__item achievements__item-grid">
-                <input class="visually-hidden" id="showmore" type="checkbox">
+              <div class="achievements__item achievements__item-grid" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="250">
+                <!--input#showmore.visually-hidden(type="checkbox")-->
                 <div class="achievements__col"> 
                   <div class="achievement-grid-item">
                     <div class="achievement-grid-item__number"> <span>#</span><span>1</span></div>
@@ -103,7 +104,7 @@
                     <div class="achievement-grid-item__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dui </div>
                   </div>
                 </div>
-                <label class="achievements__read-more btn" for="showmore">Показать ещё</label>
+                <!--label.achievements__read-more.btn(for="showmore") Показать ещё-->
               </div>
             </div>
           </div>
@@ -284,7 +285,7 @@
             </div>
           </div>
         </section>
-        <section class="services" id="services">
+        <section class="services" id="services" data-aos="fade-up" data-aos-duration="1000">
           <div class="services__content container">
             <h2 class="services__title title rectangles">Наши услуги</h2>
             <div class="tabs">
@@ -391,54 +392,7 @@
                     </div>
                   </div>
                 </div>
-                <!--.services-block 
-                article.service-card
-                    .service-card__content
-                        img.service-card__icon.service-card__icon_top_6(src="img/svg/service-icon-1.svg" aria-hidden="true" alt="")
-                        h3.service-card__title Защитные пленки
-                        .service-card__text.
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nascetur ultrices pellentesque vulputate sit. Ut feugiat.
-                        a(href="service.html").btn.service-card__link Подробнее
-                article.service-card
-                    .service-card__content
-                        img.service-card__icon(src="img/svg/advantages-icon-1.svg" aria-hidden="true" alt="")
-                        h3.service-card__title Цветные пленки
-                        .service-card__text.
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nascetur ultrices pellentesque vulputate sit. Ut feugiat.
-                        a(href="service.html").btn.service-card__link Подробнее
-                article.service-card
-                    .service-card__content
-                        img.service-card__icon.service-card__icon_top_12(src="img/svg/advantages-icon-2.svg" aria-hidden="true" alt="")
-                        h3.service-card__title Дизайн
-                        .service-card__text.
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nascetur ultrices pellentesque vulputate sit. Ut feugiat.
-                        a(href="service.html").btn.service-card__link Подробнее
-                article.service-card
-                    .service-card__content
-                        img.service-card__icon(src="img/svg/advantages-icon-3.svg" aria-hidden="true" alt="")
-                        h3.service-card__title Оклейка салона
-                        .service-card__text.
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nascetur ultrices pellentesque vulputate sit. Ut feugiat.
-                        a(href="service.html").btn.service-card__link Подробнее
-                -->
               </div>
-              <!--.tabs__content#tab2
-              .services-block 
-                  article.service-card
-                      .service-card__content
-                          img.service-card__icon(src="img/svg/service-icon-1.svg" aria-hidden="true" alt="")
-                          h3.service-card__title Защитные пленки
-                          .service-card__text.
-                              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nascetur ultrices pellentesque vulputate sit. Ut feugiat.
-                          a(href="service.html").btn.service-card__link Подробнее
-                  article.service-card
-                      .service-card__content
-                          img.service-card__icon(src="img/svg/advantages-icon-1.svg" aria-hidden="true" alt="")
-                          h3.service-card__title Цветные пленки
-                          .service-card__text.
-                              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nascetur ultrices pellentesque vulputate sit. Ut feugiat.
-                          a(href="service.html").btn.service-card__link Подробнее
-              -->
             </div>
           </div>
         </section>
@@ -570,16 +524,16 @@
           </div>
         </section>
         <section class="works" id="works">
-          <div class="works__content">
+          <div class="works__content" data-aos="fade-up" data-aos-duration="1000">
             <h2 class="works__title title rectangles">Наши работы</h2>
             <div class="works__galery">
               <div class="swiper works__slider">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide" data-hash="slide1">
-                    <div class="works__slide"><a class="gallery__item" data-fancybox="gallery" href="img/work-1.jpg"><img src="img/work-1.jpg" alt="audi r8"></a><a class="gallery__item" data-fancybox="gallery" href="img/work-2.jpg"><img src="img/work-2.jpg" alt="toyota supra"></a><a class="gallery__item" data-fancybox="gallery" href="img/work-3.jpg"><img src="img/work-3.jpg" alt="toyota brz"></a><a class="gallery__item" data-fancybox="gallery" href="img/work-6.jpg"><img src="img/work-6.jpg" alt="bmw"></a><a class="gallery__item" data-fancybox="gallery" href="img/work-5.jpg"><img src="img/work-5.jpg" alt="toyota supra"></a><a class="gallery__item" data-fancybox="gallery" href="img/work-4.jpg"><img src="img/work-4.jpg" alt="lamba"></a><a class="gallery__item" data-fancybox="gallery" href="img/work-1.jpg"><img src="img/work-1.jpg" alt="audi r8"></a><a class="gallery__item" data-fancybox="gallery" href="img/work-2.jpg"><img src="img/work-2.jpg" alt="toyota supra"></a><a class="gallery__item" data-fancybox="gallery" href="img/work-3.jpg"><img src="img/work-3.jpg" alt="toyota brz"></a></div>
+                    <div class="works__slide"><a class="gallery__item" data-fancybox="gallery" href="img/work-1.jpg"><img src="img/work-1.jpg" alt="ауди"></a><a class="gallery__item" data-fancybox="gallery" href="img/work-2.jpg"><img src="img/work-2.jpg" alt="тойота супра"></a><a class="gallery__item" data-fancybox="gallery" href="img/work-3.jpg"><img src="img/work-3.jpg" alt="тойота брз"></a><a class="gallery__item" data-fancybox="gallery" href="img/work-6.jpg"><img src="img/work-6.jpg" alt="бмв"></a><a class="gallery__item" data-fancybox="gallery" href="img/work-5.jpg"><img src="img/work-5.jpg" alt="тойота супра"></a><a class="gallery__item" data-fancybox="gallery" href="img/work-4.jpg"><img src="img/work-4.jpg" alt="ламборгини"></a><a class="gallery__item" data-fancybox="gallery" href="img/work-1.jpg"><img src="img/work-1.jpg" alt="ауди"></a><a class="gallery__item" data-fancybox="gallery" href="img/work-2.jpg"><img src="img/work-2.jpg" alt="тойота супра"></a><a class="gallery__item" data-fancybox="gallery" href="img/work-3.jpg"><img src="img/work-3.jpg" alt="тойота брз"></a></div>
                   </div>
                   <div class="swiper-slide" data-hash="slide2">
-                    <div class="works__slide"><a class="gallery__item" data-fancybox="gallery" href="img/work-4.jpg"><img src="img/work-4.jpg" alt="lamba"></a><a class="gallery__item" data-fancybox="gallery" href="img/work-5.jpg"><img src="img/work-5.jpg" alt="toyota supra"></a><a class="gallery__item" data-fancybox="gallery" href="img/work-6.jpg"><img src="img/work-6.jpg" alt="bmw"></a><a class="gallery__item" data-fancybox="gallery" href="img/work-3.jpg"><img src="img/work-3.jpg" alt="toyota brz"></a><a class="gallery__item" data-fancybox="gallery" href="img/work-2.jpg"><img src="img/work-2.jpg" alt="toyota supra"></a><a class="gallery__item" data-fancybox="gallery" href="img/work-1.jpg"><img src="img/work-1.jpg" alt="audi r8"></a><a class="gallery__item" data-fancybox="gallery" href="img/work-4.jpg"><img src="img/work-4.jpg" alt="lamba"></a><a class="gallery__item" data-fancybox="gallery" href="img/work-5.jpg"><img src="img/work-5.jpg" alt="toyota supra"></a><a class="gallery__item" data-fancybox="gallery" href="img/work-6.jpg"><img src="img/work-6.jpg" alt="bmw"></a></div>
+                    <div class="works__slide"><a class="gallery__item" data-fancybox="gallery" href="img/work-4.jpg"><img src="img/work-4.jpg" alt="ламборгини"></a><a class="gallery__item" data-fancybox="gallery" href="img/work-5.jpg"><img src="img/work-5.jpg" alt="тойота супра"></a><a class="gallery__item" data-fancybox="gallery" href="img/work-6.jpg"><img src="img/work-6.jpg" alt="бмв"></a><a class="gallery__item" data-fancybox="gallery" href="img/work-3.jpg"><img src="img/work-3.jpg" alt="тойота брз"></a><a class="gallery__item" data-fancybox="gallery" href="img/work-2.jpg"><img src="img/work-2.jpg" alt="тойота супра"></a><a class="gallery__item" data-fancybox="gallery" href="img/work-1.jpg"><img src="img/work-1.jpg" alt="ауди"></a><a class="gallery__item" data-fancybox="gallery" href="img/work-4.jpg"><img src="img/work-4.jpg" alt="ламборгини"></a><a class="gallery__item" data-fancybox="gallery" href="img/work-5.jpg"><img src="img/work-5.jpg" alt="тойота бсупра"></a><a class="gallery__item" data-fancybox="gallery" href="img/work-6.jpg"><img src="img/work-6.jpg" alt="бмв"></a></div>
                   </div>
                 </div>
               </div>
@@ -607,11 +561,11 @@
           </div>
         </section>
         <section class="form-section">
-          <div class="form-section__content container">
+          <div class="form-section__content container" data-aos="flip-down" data-aos-duration="1000">
             <h2 class="form-section__title title rectangles">ответим на любой вопрос</h2>
             <form class="form" id="form" action="#" method="POST">
               <div class="form__row">
-                <input class="form__input form__input_email" id="email" type="text" name="name" placeholder="имя" required>
+                <input class="form__input form__input_email" id="email" type="text" name="name" placeholder="имя" required minlength="3" maxlength="32">
                 <input class="form__input form__input_phone" type="tel" name="phone" placeholder="телефон" required>
               </div>
               <div class="form__row"><textarea class="form__textarea" placeholder="Вопрос по дизайну, тюнингу и др." value=""></textarea>
@@ -646,7 +600,7 @@
           </div>
         </div>
       </footer>
-    </div><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    </div>
     <script src="js/app.min.js"></script>
   </body>
 </html>
