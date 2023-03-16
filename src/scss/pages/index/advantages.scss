@@ -19,6 +19,7 @@
     &__articles{
         max-width: 526px;
         width: 100%;
+        margin: 0 auto;
     }
     &__slider{
         width: 50%;
@@ -144,8 +145,7 @@
 }
 .advantages-slide{
     &__text{
-       // max-width: 422px;
-       
+        
         position: relative;
         padding: 50px 100px 30px;
         margin: 0 auto;

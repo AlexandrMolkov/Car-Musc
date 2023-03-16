@@ -84,10 +84,10 @@ const images = ()=> {
         ]))
         .pipe(gulp.dest(`${BUILD_FOLDER}/img`))
         //.pipe(gulp.src(`${SOURCE_FOLDER}/img/**/*`))
-        .pipe(webp({
+/*         .pipe(webp({
             quality: 70
         }))
-        .pipe(gulp.dest(`${BUILD_FOLDER}/img`)) 
+        .pipe(gulp.dest(`${BUILD_FOLDER}/img`))  */
 }
 
 const js = () => {

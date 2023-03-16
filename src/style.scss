@@ -15,7 +15,13 @@
 @import "scss/common/_contact.scss";
 //@import "scss/common/_breadcrumbs.scss";
 @import "scss/common/_keyframes.scss";
-@import "scss/libs/swiper.min.scss";
+
+@import '../node_modules/swiper/swiper.scss';
+@import '../node_modules/swiper/modules/navigation/navigation.scss';
+@import '../node_modules/swiper/modules/effect-flip/effect-flip.scss';
+@import '../node_modules/swiper/modules/autoplay/autoplay.scss';
+
+@import "../node_modules/@fancyapps/ui/dist/fancybox";
 
 /* @import "scss/common/_checkbox.scss";
 @import "scss/common/_radio.scss";
@@ -25,7 +31,6 @@
 @import "scss/header";
 @import "scss/footer";
 
-//@import "scss/pages/parts/map.scss";
 @import "scss/pages/parts/services-block.scss", "scss/pages/parts/form.scss";
 
 @import "scss/pages/index/hero.scss", 

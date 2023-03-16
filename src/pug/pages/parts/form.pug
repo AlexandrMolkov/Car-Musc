@@ -3,7 +3,7 @@ section.form-section
         h2.form-section__title.title.rectangles ответим на любой вопрос
         form.form#form(action="#" method="POST")
             .form__row
-                input.form__input.form__input_email#email(type="text" name="name" placeholder="имя" required)
+                input.form__input.form__input_email#email(type="text" name="name" placeholder="имя" required minlength="3" maxlength="32")
                 input.form__input.form__input_phone(type="tel" name="phone" placeholder="телефон" required)
             .form__row
                 <textarea class="form__textarea" placeholder="Вопрос по дизайну, тюнингу и др." value=""></textarea>
