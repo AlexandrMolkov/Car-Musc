@@ -9,9 +9,9 @@
         padding-bottom: 120px;
     }
 
-    @media (max-width: $tablet){
+/*     @media (max-width: $tablet){
         padding-bottom: 200px;
-    }
+    } */
 
     &__content{
         display: flex;
@@ -74,11 +74,11 @@
             max-width: 360px;
         }
 
-        &:not(:first-of-type){
+/*         &:not(:first-of-type){
             @media (max-width: $tablet){
                 display: none;
             }
-        }
+        } */
         
         &_pt_40{
 
